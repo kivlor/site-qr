@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@resvg/resvg-js": "^2.6.2",
-    "esbuild": "0.25.10",
+    "esbuild": "0.28.2",
     "jsqr": "1.4.0",
     "web-ext": "^10.6.0"
   }
