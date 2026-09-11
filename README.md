@@ -1,5 +1,7 @@
 # Site QR
 
+[![CI](https://github.com/kivlor/site-qr/actions/workflows/ci.yml/badge.svg)](https://github.com/kivlor/site-qr/actions/workflows/ci.yml)
+
 Click the Safari or Firefox toolbar icon, scan the QR code with your phone’s camera, and open the page. No account, settings, server, analytics, or saved history. The full URL (including query and fragment) is encoded locally. Only `activeTab` access is requested.
 
 ## Try it in Safari
@@ -17,7 +19,7 @@ open 'build/Build/Products/Debug/Site QR.app'
 3. In Settings → Extensions, enable **Site QR**. The companion app has a button to open this panel.
 4. Visit a website, click Site QR in the toolbar, and scan with your phone.
 
-This is a local development build, signed to run locally. Safari resets the unsigned-extension setting when you quit. A normally signed distribution is a separate step. See [Apple’s local extension instructions](https://developer.apple.com/documentation/safariservices/running-your-safari-web-extension).
+This is a local development build, signed to run locally. Safari resets the unsigned-extension setting when you quit. For publishing a properly signed distribution, see [RELEASE.md](RELEASE.md). See [Apple’s local extension instructions](https://developer.apple.com/documentation/safariservices/running-your-safari-web-extension).
 
 On Safari versions with **Add Temporary Extension** in Settings → Developer, you can also select the `dist` folder after `bun run build`, without building the app. Temporary extensions expire after 24 hours or when Safari quits.
 
@@ -34,7 +36,7 @@ bun run firefox:build
 2. Click **Load Temporary Add-on…** and select `build/firefox/manifest.json`.
 3. Open a website, then open Site QR from the extensions (puzzle piece) menu. Pin it to the toolbar for one-click access.
 
-The same installable test package is at `build/firefox-packages/site_qr-1.0.0.zip`. Load it through **Load Temporary Add-on**, too. Temporary installs last until Firefox restarts. Permanent installation in standard Firefox requires Mozilla signing; this build is not signed or published. See [Mozilla’s installation guide](https://extensionworkshop.com/documentation/develop/temporary-installation-in-firefox/).
+The same installable test package is at `build/firefox-packages/site_qr-1.0.0.zip`. Load it through **Load Temporary Add-on**, too. Temporary installs last until Firefox restarts. Permanent installation in standard Firefox requires Mozilla signing; this build is not signed or published. For publishing, see [RELEASE.md](RELEASE.md). See [Mozilla’s installation guide](https://extensionworkshop.com/documentation/develop/temporary-installation-in-firefox/).
 
 For development, `bun run firefox:run` launches a separate temporary Firefox profile with the extension loaded and reloads it when build output changes. Run `node scripts/build.mjs --firefox` after source edits.
 

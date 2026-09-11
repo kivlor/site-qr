@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Test and build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          cache: true
+      - run: bun install --frozen-lockfile
+      - run: bun run build
+      - run: npm run test
+
+  firefox:
+    name: Firefox lint and package
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          cache: true
+      - run: bun install --frozen-lockfile
+      - run: bun run firefox:build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: firefox-package
+          path: build/firefox-packages/*.zip
+          if-no-files-found: error
+
+  safari:
+    name: Safari app build
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          cache: true
+      - run: bun install --frozen-lockfile
+      - run: bun run safari:build
