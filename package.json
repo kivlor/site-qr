@@ -3,10 +3,20 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "icons": "node scripts/app-icons.mjs",
     "build": "node scripts/build.mjs",
+    "firefox:build": "node scripts/build.mjs --firefox && web-ext lint --source-dir build/firefox && web-ext build --source-dir build/firefox --artifacts-dir build/firefox-packages --overwrite-dest",
+    "firefox:run": "node scripts/build.mjs --firefox && web-ext run --source-dir build/firefox",
     "test": "node --test",
     "safari:build": "npm run build && xcodebuild -project 'safari/Site QR/Site QR.xcodeproj' -scheme 'Site QR' -configuration Debug -derivedDataPath build CODE_SIGN_IDENTITY=- CODE_SIGNING_ALLOWED=YES build"
   },
-  "dependencies": { "qrcode": "1.5.4" },
-  "devDependencies": { "esbuild": "0.25.10", "jsqr": "1.4.0" }
+  "dependencies": {
+    "qrcode": "1.5.4"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "esbuild": "0.25.10",
+    "jsqr": "1.4.0",
+    "web-ext": "^10.6.0"
+  }
 }
