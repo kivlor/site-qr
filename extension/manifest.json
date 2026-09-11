@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Site QR",
+  "version": "1.0.0",
+  "description": "Scan the current page with your phone.",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_title": "Show QR code",
+    "default_popup": "popup.html",
+    "default_icon": "icon.svg"
+  },
+  "icons": { "128": "icon.svg" }
+}

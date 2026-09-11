@@ -1,0 +1,12 @@
+{
+  "name": "site-qr",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test",
+    "safari:build": "npm run build && xcodebuild -project 'safari/Site QR/Site QR.xcodeproj' -scheme 'Site QR' -configuration Debug -derivedDataPath build CODE_SIGN_IDENTITY=- CODE_SIGNING_ALLOWED=YES build"
+  },
+  "dependencies": { "qrcode": "1.5.4" },
+  "devDependencies": { "esbuild": "0.25.10", "jsqr": "1.4.0" }
+}

@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49BD676130540314004BC70B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49BD676030540314004BC70B /* AppDelegate.m */; };
+		49BD676530540314004BC70B /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 49BD676330540314004BC70B /* Main.html */; };
+		49BD676730540314004BC70B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 49BD676630540314004BC70B /* Icon.png */; };
+		49BD676930540314004BC70B /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 49BD676830540314004BC70B /* Style.css */; };
+		49BD676B30540314004BC70B /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 49BD676A30540314004BC70B /* Script.js */; };
+		49BD676E30540314004BC70B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49BD676D30540314004BC70B /* ViewController.m */; };
+		49BD677130540314004BC70B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49BD676F30540314004BC70B /* Main.storyboard */; };
+		49BD677330540315004BC70B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49BD677230540315004BC70B /* Assets.xcassets */; };
+		49BD677630540315004BC70B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49BD677530540315004BC70B /* main.m */; };
+		49BD677C30540315004BC70B /* Site QR Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 49BD677B30540315004BC70B /* Site QR Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		49BD678230540315004BC70B /* SafariWebExtensionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 49BD678130540315004BC70B /* SafariWebExtensionHandler.m */; };
+		49BD679430540315004BC70B /* QRCODE-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 49BD678E30540315004BC70B /* QRCODE-LICENSE.txt */; };
+		49BD679530540315004BC70B /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 49BD678F30540315004BC70B /* popup.js */; };
+		49BD679630540315004BC70B /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 49BD679030540315004BC70B /* popup.html */; };
+		49BD679730540315004BC70B /* icon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 49BD679130540315004BC70B /* icon.svg */; };
+		49BD679830540315004BC70B /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 49BD679230540315004BC70B /* manifest.json */; };
+		49BD679930540315004BC70B /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 49BD679330540315004BC70B /* popup.css */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49BD677D30540315004BC70B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49BD675430540314004BC70B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49BD677A30540315004BC70B;
+			remoteInfo = "Site QR Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		49BD678930540315004BC70B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				49BD677C30540315004BC70B /* Site QR Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		49BD675C30540314004BC70B /* Site QR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Site QR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49BD675F30540314004BC70B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		49BD676030540314004BC70B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		49BD676430540314004BC70B /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		49BD676630540314004BC70B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		49BD676830540314004BC70B /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		49BD676A30540314004BC70B /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		49BD676C30540314004BC70B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		49BD676D30540314004BC70B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		49BD677030540314004BC70B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		49BD677230540315004BC70B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49BD677430540315004BC70B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49BD677530540315004BC70B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		49BD677B30540315004BC70B /* Site QR Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Site QR Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49BD678030540315004BC70B /* SafariWebExtensionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafariWebExtensionHandler.h; sourceTree = "<group>"; };
+		49BD678130540315004BC70B /* SafariWebExtensionHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafariWebExtensionHandler.m; sourceTree = "<group>"; };
+		49BD678330540315004BC70B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49BD678E30540315004BC70B /* QRCODE-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = "QRCODE-LICENSE.txt"; path = "../../../dist/QRCODE-LICENSE.txt"; sourceTree = "<group>"; };
+		49BD678F30540315004BC70B /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = popup.js; path = ../../../dist/popup.js; sourceTree = "<group>"; };
+		49BD679030540315004BC70B /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = ../../../dist/popup.html; sourceTree = "<group>"; };
+		49BD679130540315004BC70B /* icon.svg */ = {isa = PBXFileReference; lastKnownFileType = text; name = icon.svg; path = ../../../dist/icon.svg; sourceTree = "<group>"; };
+		49BD679230540315004BC70B /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../../dist/manifest.json; sourceTree = "<group>"; };
+		49BD679330540315004BC70B /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = popup.css; path = ../../../dist/popup.css; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49BD675930540314004BC70B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49BD677830540315004BC70B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49BD675330540314004BC70B = {
+			isa = PBXGroup;
+			children = (
+				49BD675E30540314004BC70B /* Site QR */,
+				49BD677F30540315004BC70B /* Site QR Extension */,
+				49BD675D30540314004BC70B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49BD675D30540314004BC70B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49BD675C30540314004BC70B /* Site QR.app */,
+				49BD677B30540315004BC70B /* Site QR Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49BD675E30540314004BC70B /* Site QR */ = {
+			isa = PBXGroup;
+			children = (
+				49BD675F30540314004BC70B /* AppDelegate.h */,
+				49BD676030540314004BC70B /* AppDelegate.m */,
+				49BD676C30540314004BC70B /* ViewController.h */,
+				49BD676D30540314004BC70B /* ViewController.m */,
+				49BD676F30540314004BC70B /* Main.storyboard */,
+				49BD677230540315004BC70B /* Assets.xcassets */,
+				49BD677430540315004BC70B /* Info.plist */,
+				49BD677530540315004BC70B /* main.m */,
+				49BD676230540314004BC70B /* Resources */,
+			);
+			path = "Site QR";
+			sourceTree = "<group>";
+		};
+		49BD676230540314004BC70B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				49BD676330540314004BC70B /* Main.html */,
+				49BD676630540314004BC70B /* Icon.png */,
+				49BD676830540314004BC70B /* Style.css */,
+				49BD676A30540314004BC70B /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		49BD677F30540315004BC70B /* Site QR Extension */ = {
+			isa = PBXGroup;
+			children = (
+				49BD678D30540315004BC70B /* Resources */,
+				49BD678030540315004BC70B /* SafariWebExtensionHandler.h */,
+				49BD678130540315004BC70B /* SafariWebExtensionHandler.m */,
+				49BD678330540315004BC70B /* Info.plist */,
+			);
+			path = "Site QR Extension";
+			sourceTree = "<group>";
+		};
+		49BD678D30540315004BC70B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				49BD678E30540315004BC70B /* QRCODE-LICENSE.txt */,
+				49BD678F30540315004BC70B /* popup.js */,
+				49BD679030540315004BC70B /* popup.html */,
+				49BD679130540315004BC70B /* icon.svg */,
+				49BD679230540315004BC70B /* manifest.json */,
+				49BD679330540315004BC70B /* popup.css */,
+			);
+			name = Resources;
+			path = "Site QR Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49BD675B30540314004BC70B /* Site QR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49BD678A30540315004BC70B /* Build configuration list for PBXNativeTarget "Site QR" */;
+			buildPhases = (
+				49BD675830540314004BC70B /* Sources */,
+				49BD675930540314004BC70B /* Frameworks */,
+				49BD675A30540314004BC70B /* Resources */,
+				49BD678930540315004BC70B /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49BD677E30540315004BC70B /* PBXTargetDependency */,
+			);
+			name = "Site QR";
+			packageProductDependencies = (
+			);
+			productName = "Site QR";
+			productReference = 49BD675C30540314004BC70B /* Site QR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		49BD677A30540315004BC70B /* Site QR Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49BD678630540315004BC70B /* Build configuration list for PBXNativeTarget "Site QR Extension" */;
+			buildPhases = (
+				49BD677730540315004BC70B /* Sources */,
+				49BD677830540315004BC70B /* Frameworks */,
+				49BD677930540315004BC70B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Site QR Extension";
+			packageProductDependencies = (
+			);
+			productName = "Site QR Extension";
+			productReference = 49BD677B30540315004BC70B /* Site QR Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49BD675430540314004BC70B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					49BD675B30540314004BC70B = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					49BD677A30540315004BC70B = {
+						CreatedOnToolsVersion = 26.5;
+					};
+				};
+			};
+			buildConfigurationList = 49BD675730540314004BC70B /* Build configuration list for PBXProject "Site QR" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49BD675330540314004BC70B;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 49BD675D30540314004BC70B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49BD675B30540314004BC70B /* Site QR */,
+				49BD677A30540315004BC70B /* Site QR Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49BD675A30540314004BC70B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49BD676730540314004BC70B /* Icon.png in Resources */,
+				49BD677130540314004BC70B /* Main.storyboard in Resources */,
+				49BD676B30540314004BC70B /* Script.js in Resources */,
+				49BD676530540314004BC70B /* Main.html in Resources */,
+				49BD677330540315004BC70B /* Assets.xcassets in Resources */,
+				49BD676930540314004BC70B /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49BD677930540315004BC70B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49BD679430540315004BC70B /* QRCODE-LICENSE.txt in Resources */,
+				49BD679630540315004BC70B /* popup.html in Resources */,
+				49BD679930540315004BC70B /* popup.css in Resources */,
+				49BD679830540315004BC70B /* manifest.json in Resources */,
+				49BD679530540315004BC70B /* popup.js in Resources */,
+				49BD679730540315004BC70B /* icon.svg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49BD675830540314004BC70B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49BD676E30540314004BC70B /* ViewController.m in Sources */,
+				49BD677630540315004BC70B /* main.m in Sources */,
+				49BD676130540314004BC70B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49BD677730540315004BC70B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49BD678230540315004BC70B /* SafariWebExtensionHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49BD677E30540315004BC70B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49BD677A30540315004BC70B /* Site QR Extension */;
+			targetProxy = 49BD677D30540315004BC70B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		49BD676330540314004BC70B /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49BD676430540314004BC70B /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		49BD676F30540314004BC70B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49BD677030540314004BC70B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49BD678430540315004BC70B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		49BD678530540315004BC70B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		49BD678730540315004BC70B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Site QR Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Site QR Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.siteqr.app.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		49BD678830540315004BC70B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Site QR Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Site QR Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.siteqr.app.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		49BD678B30540315004BC70B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Site QR/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Site QR";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.siteqr.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		49BD678C30540315004BC70B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Site QR/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Site QR";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.siteqr.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49BD675730540314004BC70B /* Build configuration list for PBXProject "Site QR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49BD678430540315004BC70B /* Debug */,
+				49BD678530540315004BC70B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49BD678630540315004BC70B /* Build configuration list for PBXNativeTarget "Site QR Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49BD678730540315004BC70B /* Debug */,
+				49BD678830540315004BC70B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49BD678A30540315004BC70B /* Build configuration list for PBXNativeTarget "Site QR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49BD678B30540315004BC70B /* Debug */,
+				49BD678C30540315004BC70B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49BD675430540314004BC70B /* Project object */;
+}
